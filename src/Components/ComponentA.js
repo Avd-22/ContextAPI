@@ -7,7 +7,7 @@ const ComponentA = () => {
 
   return (
     <div style={{ backgroundColor: "wheat" }}>
-      <p>count: {count}</p>
+      <p>Count: {count}</p>
       <ComponentB />
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { useCounter } from "../Contexts/Countercontext";
 
 const Mycounter = () => {
-  const { count, increaseCount, decreaseCount } = useCounter();
+  const { count, increaseCount, decreaseCount, emptyCount } = useCounter();
 
   return (
     <div>
@@ -10,6 +10,7 @@ const Mycounter = () => {
       <p>Count is : {count}</p>
       <button onClick={increaseCount}>Increase Count</button>
       <button onClick={decreaseCount}>Decrease Count</button>
+      <button onClick={emptyCount}>Empty Count</button>
     </div>
   );
 };

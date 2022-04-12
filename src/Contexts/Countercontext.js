@@ -12,8 +12,11 @@ function CounterContextProvider(props) {
   function decreaseCount() {
     setCount(count - 1);
   }
+  function emptyCount() {
+    setCount(0);
+  }
 
-  const value = { count, increaseCount, decreaseCount };
+  const value = { count, increaseCount, decreaseCount, emptyCount };
 
   return (
     <Countercontext.Provider value={value}>
